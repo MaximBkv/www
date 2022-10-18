@@ -8,13 +8,14 @@ require($_SERVER["DOCUMENT_ROOT"]."/bitrix/header.php");
 
 $APPLICATION->SetTitle("404 Not Found");
 
-$APPLICATION->IncludeComponent("bitrix:main.map", ".default", Array(
-	"LEVEL"	=>	"3",
-	"COL_NUM"	=>	"2",
-	"SHOW_DESCRIPTION"	=>	"Y",
-	"SET_TITLE"	=>	"Y",
-	"CACHE_TIME"	=>	"36000000"
-	)
+$APPLICATION->IncludeComponent("bitrix:main.map", "glav_menu", Array(
+	"LEVEL" => "3",	// Максимальный уровень вложенности (0 - без вложенности)
+		"COL_NUM" => "2",	// Количество колонок
+		"SHOW_DESCRIPTION" => "Y",	// Показывать описания
+		"SET_TITLE" => "Y",	// Устанавливать заголовок страницы
+		"CACHE_TIME" => "36000000",	// Время кеширования (сек.)
+	),
+	false
 );
 
 require($_SERVER["DOCUMENT_ROOT"]."/bitrix/footer.php");?>
