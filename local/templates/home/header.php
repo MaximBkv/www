@@ -1,9 +1,9 @@
-<?if(!defined("B_PROLOG_INCLUDED")||B_PROLOG_INCLUDED!==true)die();?>
+<? if(!defined("B_PROLOG_INCLUDED")||B_PROLOG_INCLUDED!==true)die();?>
 <?php
 IncludeTemplateLangFile(__FILE__);
 ?>
 <!DOCTYPE html>
-<html lang="LANGUAGE_ID">
+
   <head>
 <?
 $APPLICATION->SetAdditionalCSS("https://fonts.googleapis.com/css?family=Nunito+Sans:200,300,400,700,900|Roboto+Mono:300,400,500");
@@ -21,8 +21,9 @@ $APPLICATION->SetAdditionalCSS("/local/templates/home/css/fl-bigmug-line.css");
 $APPLICATION->SetAdditionalCSS("/local/templates/home/css/aos.css");
 $APPLICATION->SetAdditionalCSS("/local/templates/home/css/style.css");
 ?>
-<meta http-equiv="Content-Type" content="text/html; charset=<?=LANG_CHARSET;?>" />
-<?$APPLICATION->ShowCSS();?>
+
+<? define('LANGUAGE_ID','en');?>
+
     <title><?$APPLICATION->ShowTitle();?></title>
     <?$APPLICATION->ShowHead();?>
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
