@@ -5,28 +5,31 @@ IncludeTemplateLangFile(__FILE__);
 <!DOCTYPE html>
 <html lang="en">
   <head>
+<?
+$APPLICATION->SetAdditionalCSS("https://fonts.googleapis.com/css?family=Nunito+Sans:200,300,400,700,900|Roboto+Mono:300,400,500");
+$APPLICATION->SetAdditionalCSS("/local/templates/home/fonts/icomoon/style.css");
+$APPLICATION->SetAdditionalCSS("/local/templates/home/css/bootstrap.min.css");
+$APPLICATION->SetAdditionalCSS("/local/templates/home/css/magnific-popup.css");
+$APPLICATION->SetAdditionalCSS("/local/templates/home/css/jquery-ui.css");
+$APPLICATION->SetAdditionalCSS("/local/templates/home/css/owl.carousel.min.css");
+$APPLICATION->SetAdditionalCSS("/local/templates/home/css/owl.theme.default.min.css");
+$APPLICATION->SetAdditionalCSS("/local/templates/home/css/bootstrap-datepicker.css");
+$APPLICATION->SetAdditionalCSS("/local/templates/home/css/mediaelementplayer.css");
+$APPLICATION->SetAdditionalCSS("/local/templates/home/css/animate.css");
+$APPLICATION->SetAdditionalCSS("/local/templates/home/fonts/flaticon/font/flaticon.css");
+$APPLICATION->SetAdditionalCSS("/local/templates/home/css/fl-bigmug-line.css");
+$APPLICATION->SetAdditionalCSS("/local/templates/home/css/aos.css");
+$APPLICATION->SetAdditionalCSS("/local/templates/home/css/style.css");
+?>
+<meta http-equiv="Content-Type" content="text/html; charset=<?=LANG_CHARSET;?>" />
+<?$APPLICATION->ShowMeta("keywords")?>
+<?$APPLICATION->ShowMeta("description")?>
+<?$APPLICATION->ShowCSS();?>
     <title><?$APPLICATION->ShowTitle();?></title>
     <?$APPLICATION->ShowHead();?>
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Nunito+Sans:200,300,400,700,900|Roboto+Mono:300,400,500"> 
-    <link rel="stylesheet" href="<?php echo SITE_TEMPLATE_PATH ?>/fonts/icomoon/style.css">
 
-    <link rel="stylesheet" href="<?php echo SITE_TEMPLATE_PATH ?>/css/bootstrap.min.css">
-    <link rel="stylesheet" href="<?php echo SITE_TEMPLATE_PATH ?>/css/magnific-popup.css">
-    <link rel="stylesheet" href="<?php echo SITE_TEMPLATE_PATH ?>/css/jquery-ui.css">
-    <link rel="stylesheet" href="<?php echo SITE_TEMPLATE_PATH ?>/css/owl.carousel.min.css">
-    <link rel="stylesheet" href="<?php echo SITE_TEMPLATE_PATH ?>/css/owl.theme.default.min.css">
-    <link rel="stylesheet" href="<?php echo SITE_TEMPLATE_PATH ?>/css/bootstrap-datepicker.css">
-    <link rel="stylesheet" href="<?php echo SITE_TEMPLATE_PATH ?>/css/mediaelementplayer.css">
-    <link rel="stylesheet" href="<?php echo SITE_TEMPLATE_PATH ?>/css/animate.css">
-    <link rel="stylesheet" href="<?php echo SITE_TEMPLATE_PATH ?>/fonts/flaticon/font/flaticon.css">
-    <link rel="stylesheet" href="<?php echo SITE_TEMPLATE_PATH ?>/css/fl-bigmug-line.css">
-    
-  
-    <link rel="stylesheet" href="<?php echo SITE_TEMPLATE_PATH ?>/css/aos.css">
-
-    <link rel="stylesheet" href="<?php echo SITE_TEMPLATE_PATH ?>/css/style.css">
     
   </head>
   <body>
