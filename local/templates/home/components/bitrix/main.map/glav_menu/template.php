@@ -15,10 +15,18 @@ $allNum = count($arRootNode);
 $colNum = ceil($allNum / $arParams["COL_NUM"]);
 
 ?>
-<table class="map-columns">
-<tr>
-	<td>
-		<ul class="map-level-0">
+    <div class="site-navbar">
+        <div class="container py-1">
+          <div class="row align-items-center">
+            <div class="col-8 col-md-8 col-lg-4">
+              <h1 class=""><a href="index.php" class="h5 text-uppercase text-black"><strong>HomeSpace<span class="text-danger">.</span></strong></a></h1>
+            </div>
+            <div class="col-4 col-md-4 col-lg-8">
+              <nav class="site-navigation text-right text-md-right" role="navigation">
+
+                <div class="d-inline-block d-lg-none ml-md-0 mr-auto py-3"><a href="#" class="site-menu-toggle js-menu-toggle text-black"><span class="icon-menu h3"></span></a></div>
+
+                <ul class="site-menu js-clone-nav d-none d-lg-block">
 
 		<?
 		$previousLevel = -1;
@@ -41,13 +49,13 @@ $colNum = ceil($allNum / $arParams["COL_NUM"]);
 					$counter = 0;
 					$column++;
 			?>
-				</ul></td><td><ul class="map-level-0">
+				<ul class="site-menu js-clone-nav d-none d-lg-block">
 			<?endif?>
 
 			<?if (array_key_exists($index+1, $arResult["arMap"]) && $arItem["LEVEL"] < $arResult["arMap"][$index+1]["LEVEL"]):?>
 
-				<li><a href="<?=$arItem["FULL_PATH"]?>"><?=$arItem["NAME"]?></a><?if ($arParams["SHOW_DESCRIPTION"] == "Y" && $arItem["DESCRIPTION"] <> '') {?><div><?=$arItem["DESCRIPTION"]?></div><?}?>
-					<ul class="map-level-<?=$arItem["LEVEL"]+1?>">
+				<li class="has-children"><a href="<?=$arItem["FULL_PATH"]?>"><?=$arItem["NAME"]?></a><?if ($arParams["SHOW_DESCRIPTION"] == "Y" && $arItem["DESCRIPTION"] <> '') {?><div><?=$arItem["DESCRIPTION"]?></div><?}?>
+					<ul class="dropdown">
 
 			<?else:?>
 
@@ -68,7 +76,12 @@ $colNum = ceil($allNum / $arParams["COL_NUM"]);
 			<?=str_repeat("</ul></li>", ($previousLevel-1) );?>
 		<?endif?>
 
-		</ul>
-	</td>
-</tr>
-</table>
+                </ul>
+              </nav>
+            </div>
+
+
+          </div>
+        </div>
+      </div>
+    </div>

@@ -102,7 +102,7 @@ $APPLICATION->SetAdditionalCSS("/local/templates/home/css/style.css");
                 </ul>
               </nav>
             </div>
-           
+
 
           </div>
         </div>
