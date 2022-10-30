@@ -1,13 +1,18 @@
 <?if (!defined("B_PROLOG_INCLUDED") || B_PROLOG_INCLUDED !== true) die();?>
 
+
 <? if (!empty($arResult)) : ?>
-    <nav class="site-navigation text-right text-md-right" role="navigation">
-        <div class="d-inline-block d-lg-none ml-md-0 mr-auto py-3">
-            <a href="#" class="site-menu-toggle js-menu-toggle text-black">
-                <span class="icon-menu h3"></span>
-            </a>
-        </div>
-        <ul class="site-menu js-clone-nav d-none d-lg-block">
+
+
+          <div class="col-lg-4 mb-5 mb-lg-0">
+            <div class="row mb-5">
+              <div class="col-md-12">
+                <h3 class="footer-heading mb-4">Navigations</h3>
+              </div>
+
+
+
+
             <? $previousLevel = 0; ?>
             <? foreach ($arResult as $arItem) : ?>
                 <? if ($previousLevel && $arItem["DEPTH_LEVEL"] < $previousLevel) : ?>
@@ -15,9 +20,11 @@
                 <? endif ?>
                 <? if ($arItem["IS_PARENT"]) : ?>
                     <? if ($arItem["DEPTH_LEVEL"] >= 1) : ?>
-                        <li class="has-children <? if ($arItem['SELECTED']) : ?> active <? endif ?>">
+                        <li class=" <? if ($arItem['SELECTED']) : ?> active <? endif ?>">
                             <a href="<?= $arItem["LINK"] ?>"><?= $arItem["TEXT"] ?></a>
-                            <ul class="dropdown">
+                            <div class="col-md-6 col-lg-6">
+
+                <ul class="list-unstyled">
                   
                  
                     <? endif ?>
@@ -37,5 +44,8 @@
                 <?= str_repeat("</ul></li>", ($previousLevel - 1)); ?>
             <? endif ?>
         </ul>
-    </nav>
+
+
+
+</div></div></div>
 <? endif ?>
