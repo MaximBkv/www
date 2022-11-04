@@ -21,7 +21,7 @@ $this->setFrameMode(true);
                 <div class="select-wrap">
                     <span class="icon icon-arrow_drop_down"></span>
                     <select name="offer-types" id="offer-types" class="form-control d-block rounded-0">
-                        <option value=""><?= GetMessage("PLOSHAD"); ?></option>
+                        <option value=""><?= GetMessage("SQUARE"); ?></option>
                         <option value="500">500</option>
                         <option value="700">700</option>
                         <option value="800">800</option>
@@ -37,7 +37,7 @@ $this->setFrameMode(true);
                     <select name="offer-types" id="offer-types" class="form-control d-block rounded-0">
                         <option value=""><?= GetMessage("GARAGES"); ?></option>
                         <option value="garazh">Есть</option>
-                        <option value="nogarage">Нет</option>
+                        <option value="nogarazh">Нет</option>
                     </select>
                 </div>
             </div>
@@ -45,7 +45,7 @@ $this->setFrameMode(true);
                 <div class="select-wrap">
                     <span class="icon icon-arrow_drop_down"></span>
                     <select name="offer-types" id="offer-types" class="form-control d-block rounded-0">
-                        <option value=""><?= GetMessage("ETAZHI"); ?></option>
+                        <option value=""><?= GetMessage("FLOOR_COUNT"); ?></option>
                         <option value="1">1</option>
                         <option value="2">2</option>
                         <option value="3">3</option>
@@ -81,7 +81,7 @@ $this->setFrameMode(true);
                 <div class="select-wrap">
                     <span class="icon icon-arrow_drop_down"></span>
                     <select name="offer-types" id="offer-types" class="form-control d-block rounded-0">
-                        <option value=""><?= GetMessage("SANUZLY"); ?></option>
+                        <option value=""><?= GetMessage("TOILET_COUNT"); ?></option>
                         <option value="1">1</option>
                         <option value="2">2</option>
                         <option value="3">3</option>
