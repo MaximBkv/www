@@ -1,0 +1,29 @@
+<?
+$MESS["PROPERTY_DETAILS"] = "Информация о недвижимости";
+$MESS["UPDATE_DATE"] = "Обновлено";
+$MESS["FLOORS"] = "Этажей";
+$MESS["BEDS"] = "Спальни";
+$MESS["TOILETS"] = "Туалетов";
+$MESS["GARAGES"] = "Гаражи";
+$MESS["SQUARE_UNIT"] = "m²";
+$MESS["HOME_TYPE"] = "Тип дома";
+$MESS["YEAR_BUILT"] = "Год постройки";
+$MESS["PRICE"] = "Цена";
+$MESS["MORE_INFO"] = "Подробная информация";
+$MESS["PROPERTY_GALLERY"] = "Галерея недвижимости";
+$MESS["CONTACT_AGENT"] = "Связаться с агентом";
+$MESS["NAME"] = "Имя";
+$MESS["EMAIL"] = "Эл. почта";
+$MESS["PHONE"] = "Телефон";
+$MESS["SEND_MESSAGE"] = "Отправить";
+$MESS["PARAGRAPH"] = "Заметка";
+$MESS["NO_IMAGES"] = "Изображений нет";
+$MESS["NO_LINKS"] = "Ссылок нет";
+$MESS["GARAGES_YES"] = "Есть";
+$MESS["NO_GARAGES"] = "Нет";
+$MESS["IMAG"] = "Изображение";
+$MESS["LINKK"] = "Ссылка";
+$MESS["NO_EXTRA_SOURCE"] = "Доп. материалов нет";
+$MESS["EXTRA_SOURCE"] = "Дополнительные материалы";
+$MESS["EXTRA_LINKS"] = "Ссылки на внешние ресурсы";
+?>

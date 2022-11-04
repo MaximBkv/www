@@ -161,5 +161,17 @@
         </div>
 
 
-
+  <? if ($APPLICATION->GetCurPage() !== "/") :
+      $APPLICATION->IncludeComponent(
+	"bitrix:breadcrumb", 
+	"navigate", 
+	array(
+		"PATH" => "",
+		"SITE_ID" => "s1",
+		"START_FROM" => "0",
+		"COMPONENT_TEMPLATE" => "navigate"
+	),
+	false
+);
+  endif ?>
 

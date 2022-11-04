@@ -1,12 +1,13 @@
 <?
 require($_SERVER["DOCUMENT_ROOT"]."/bitrix/header.php");
 $APPLICATION->SetTitle("Title");
-?><?$APPLICATION->IncludeComponent(
+?><p>
+	<?$APPLICATION->IncludeComponent(
 	"bitrix:main.include",
 	"",
 	Array(
 		"AREA_FILE_SHOW" => "page",
-		"AREA_FILE_SUFFIX" => "inc",
-		"EDIT_TEMPLATE" => ""
+		"AREA_FILE_SUFFIX" => "include"
 	)
-);?><?require($_SERVER["DOCUMENT_ROOT"]."/bitrix/footer.php");?>
+);?><br>
+</p><?require($_SERVER["DOCUMENT_ROOT"]."/bitrix/footer.php");?>
