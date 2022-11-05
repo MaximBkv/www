@@ -1,4 +1,4 @@
-F<?
+<?
 if (!defined("B_PROLOG_INCLUDED") || B_PROLOG_INCLUDED !== true) die();
 /** @var array $arParams */
 /** @var array $arResult */
@@ -32,20 +32,20 @@ $this->setFrameMode(true);
             
 
                     <div class="slide-one-item home-slider owl-carousel">
-                        <? if ($arResult["DISPLAY_PROPERTIES"]["imggallery"]['FILE_VALUE']['ID']) : ?>
+                        <? if ($arResult["DISPLAY_PROPERTIES"]["imggalery"]['FILE_VALUE']['ID']) : ?>
                             <div>
                                 <img
-                                    src="<?= $arResult["DISPLAY_PROPERTIES"]["imggallery"]["FILE_VALUE"]["SRC"]; ?>"
-                                    alt="<?= $arResult["DISPLAY_PROPERTIES"]["imggallery"]["FILE_VALUE"]["ORIGINAL_NAME"]; ?>"
+                                    src="<?= $arResult["DISPLAY_PROPERTIES"]["imggalery"]["FILE_VALUE"]["SRC"]; ?>"
+                                    alt="<?= $arResult["DISPLAY_PROPERTIES"]["imggalery"]["FILE_VALUE"]["ORIGINAL_NAME"]; ?>"
                                     class="img-fluid"
                                 >
                             </div>
-                        <? elseif (count($arResult["DISPLAY_PROPERTIES"]["imggallery"]["VALUE"]) > 1) : ?>
-                            <? foreach ($arResult["DISPLAY_PROPERTIES"]["imggallery"]["VALUE"] as $index => $value ) : ?>
+                        <? elseif (count($arResult["DISPLAY_PROPERTIES"]["imggalery"]["VALUE"]) > 1) : ?>
+                            <? foreach ($arResult["DISPLAY_PROPERTIES"]["imggalery"]["VALUE"] as $index => $value ) : ?>
                                 <div>
                                     <img
-                                        src="<?= $arResult["DISPLAY_PROPERTIES"]["imggallery"]["FILE_VALUE"][$index]["SRC"]; ?>"
-                                        alt="<?= $arResult["DISPLAY_PROPERTIES"]["imggallery"]["FILE_VALUE"][$index]["ORIGINAL_NAME"]; ?>"
+                                        src="<?= $arResult["DISPLAY_PROPERTIES"]["imggalery"]["FILE_VALUE"][$index]["SRC"]; ?>"
+                                        alt="<?= $arResult["DISPLAY_PROPERTIES"]["imggalery"]["FILE_VALUE"][$index]["ORIGINAL_NAME"]; ?>"
                                         class="img-fluid">
                                 </div>
                             <? endforeach; ?>
@@ -104,29 +104,29 @@ $this->setFrameMode(true);
                     </div>
                     <h2 class="h4 text-black"><?= GetMessage("MORE_INFO"); ?></h2>
                     <p><?= $arResult["DETAIL_TEXT"]; ?></p>
-                    <? if (!empty($arResult["DISPLAY_PROPERTIES"]["imggallery"])) : ?>
+                    <? if (!empty($arResult["DISPLAY_PROPERTIES"]["imggalery"])) : ?>
                     <div class="row mt-5">
                         <div class="col-12">
                             <h2 class="h4 text-black mb-3"><?= GetMessage("PROPERTY_GALLERY"); ?></h2>
                         </div> 
                       
-                            <? if ($arResult["DISPLAY_PROPERTIES"]["imggallery"]['FILE_VALUE']['ID']) : ?>
+                            <? if ($arResult["DISPLAY_PROPERTIES"]["imggalery"]['FILE_VALUE']['ID']) : ?>
                                 <div class="col-sm-6 col-md-4 col-lg-3 mb-4">
-                                    <a href="<?= $arResult["DISPLAY_PROPERTIES"]["imggallery"]["FILE_VALUE"]["SRC"]; ?>" class="image-popup gal-item">
+                                    <a href="<?= $arResult["DISPLAY_PROPERTIES"]["imggalery"]["FILE_VALUE"]["SRC"]; ?>" class="image-popup gal-item">
                                         <img
-                                            src="<?= $arResult["DISPLAY_PROPERTIES"]["imggallery"]["FILE_VALUE"]["SRC"]; ?>"
-                                            alt="<?= $arResult["DISPLAY_PROPERTIES"]["imggallery"]["FILE_VALUE"]["ORIGINAL_NAME"]; ?>"
+                                            src="<?= $arResult["DISPLAY_PROPERTIES"]["imggalery"]["FILE_VALUE"]["SRC"]; ?>"
+                                            alt="<?= $arResult["DISPLAY_PROPERTIES"]["imggalery"]["FILE_VALUE"]["ORIGINAL_NAME"]; ?>"
                                             class="img-fluid"
                                         >
                                     </a>
                                 </div>
-                            <? elseif (count($arResult["DISPLAY_PROPERTIES"]["imggallery"]['VALUE']) > 1) : ?>
-                                <? foreach ($arResult["DISPLAY_PROPERTIES"]["imggallery"]["VALUE"] as $index => $value ) : ?>
+                            <? elseif (count($arResult["DISPLAY_PROPERTIES"]["imggalery"]['VALUE']) > 1) : ?>
+                                <? foreach ($arResult["DISPLAY_PROPERTIES"]["imggalery"]["VALUE"] as $index => $value ) : ?>
                                     <div class="col-sm-6 col-md-4 col-lg-3 mb-4">
-                                        <a href="<?= $arResult["DISPLAY_PROPERTIES"]["imggallery"]["FILE_VALUE"][$index]["SRC"]; ?>" class="image-popup gal-item">
+                                        <a href="<?= $arResult["DISPLAY_PROPERTIES"]["imggalery"]["FILE_VALUE"][$index]["SRC"]; ?>" class="image-popup gal-item">
                                             <img
-                                                src="<?= $arResult["DISPLAY_PROPERTIES"]["imggallery"]["FILE_VALUE"][$index]["SRC"]; ?>"
-                                                alt="<?= $arResult["DISPLAY_PROPERTIES"]["imggallery"]["FILE_VALUE"][$index]["ORIGINAL_NAME"]; ?>"
+                                                src="<?= $arResult["DISPLAY_PROPERTIES"]["imggalery"]["FILE_VALUE"][$index]["SRC"]; ?>"
+                                                alt="<?= $arResult["DISPLAY_PROPERTIES"]["imggalery"]["FILE_VALUE"][$index]["ORIGINAL_NAME"]; ?>"
                                                 class="img-fluid"
                                             >
                                         </a>
