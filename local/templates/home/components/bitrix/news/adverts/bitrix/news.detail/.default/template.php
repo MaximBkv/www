@@ -155,7 +155,7 @@ $this->setFrameMode(true);
                         <? endif; ?>
 
                     </div>
-                    <? if (!empty($arResult["DISPLAY_PROPERTIES"]["extlinks"])) : ?>
+                    <? if (!empty($arResult["DISPLAY_PROPERTIES"]["ssylki"])) : ?>
 
                     <div class="mt-5">
                         <h2 class="h4 text-black mb-3"><?= GetMessage("EXTRA_LINKS"); ?></h2>
